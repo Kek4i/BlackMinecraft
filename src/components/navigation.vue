@@ -75,7 +75,6 @@ a{
   position: absolute;
   top: calc(100% + 5px);
   border-radius: 3px;
-  width: 250px;
   background: #1d1d1d;
   cursor: auto;
   opacity: 1;
@@ -86,6 +85,36 @@ a{
   position: absolute;
   pointer-events: none;
   opacity: 0;
+}
+
+@media (max-width: 1023px) {
+  .menu-icon a{
+    font-size: 1.2em;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .menu-icon a{
+    font-size: 1em;
+    margin: 0 4px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .menu-links a{
+    /* Задаем display: block для ссылок, чтобы они были друг под другом */
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 250px) {
+  .dropdown-show{
+    right: 1px;
+    left: auto;
+  }
 }
 
 </style>
