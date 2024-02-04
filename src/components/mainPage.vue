@@ -26,6 +26,22 @@
         BLACKMC.COM.PL
     </span>
   </div>
+
+  <div class="copy-info">
+    <img class="mouse-click" src="../components/icons/mouse-click.png" alt="Щелчок мышью">
+    скопировать
+  </div>
+
+  <div class="server-status">
+    <div class="server-status-icon online">
+    </div>
+    <div class="server-status-info">
+      Онлайн-игроков:
+      <span class="playercount">
+        0/100
+      </span>
+    </div>
+  </div>
 </main>
 </template>
 
@@ -70,6 +86,45 @@ main{
   font-weight: 900;
   font-size: 26px;
   cursor: pointer;
+}
+
+.copy-info{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.mouse-click{
+  width: 30px;
+}
+
+.server-status{
+  position: absolute;
+  bottom: 200px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.server-status-icon{
+  border: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  animation: pulse 2s ease-out;
+  animation-iteration-count: infinite;
+}
+
+.server-status-icon.online{
+  background-color: #47e18d;
+}
+
+.server-status-info {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  margin-left: 14px;
 }
 
 </style>
