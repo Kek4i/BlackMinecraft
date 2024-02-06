@@ -1,5 +1,6 @@
 <template>
-  <nav>
+  <!-- Добавляем класс colapse к nav в зависимости от значения isCollapsed -->
+  <nav :class="{ colapse: isCollapsed }">
     <div class="menu-icon">
       <div class="menu-links">
         <router-link to="/">ГЛАВНАЯ</router-link>
@@ -34,6 +35,11 @@ nav{
 
 a{
   text-decoration: none;
+}
+
+.colapse{
+  background: rgba(0,0,0,0.5);
+  height: 90px;
 }
 
 .menu-icon{
@@ -121,6 +127,8 @@ a{
 
 <script setup>
 import { ref } from "vue";
+import { onMounted } from "vue";
+import { onUnmounted } from "vue";
 
 // Создаем реактивное свойство dropdownVisible, которое будет хранить состояние видимости выпадающего меню
 const dropdownVisible = ref(false);
@@ -129,4 +137,23 @@ const dropdownVisible = ref(false);
 const toggleDropdown = () => {
   dropdownVisible.value = !dropdownVisible.value;
 };
+
+// Создаем реактивное свойство isCollapsed, которое будет хранить состояние свернутости nav
+const isCollapsed = ref(false);
+
+// Создаем метод handleScroll, который будет обрабатывать событие scroll на window
+const handleScroll = () => {
+  // Если scrollY больше нуля, то nav свернут, иначе развернут
+  isCollapsed.value = window.scrollY > 0;
+};
+
+// Добавляем обработчик события scroll на window при монтировании компонента
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+// Удаляем обработчик события scroll с window при размонтировании компонента
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
