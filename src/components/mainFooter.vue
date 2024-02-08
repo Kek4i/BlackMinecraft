@@ -115,6 +115,14 @@ span{
   color: #6d6d6d;
 }
 
+@media (max-width: 1023px) {
+  .container{
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+}
+
 </style>
 
 <script setup>

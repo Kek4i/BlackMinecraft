@@ -66,20 +66,6 @@ main{
   height: 110px;
 }
 
-@media (max-width: 1023px) {
-  #logo-title{
-    height: 70px;
-  }
-
-}
-
-@media (max-width: 640px) {
-  #logo-title{
-    height: 39px;
-  }
-
-}
-
 .copy-ip{
   color: #F3C623;
   margin-top: 50px;
@@ -125,6 +111,23 @@ main{
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   margin-left: 14px;
+}
+
+@media (max-width: 1023px) {
+  #logo-title{
+    height: 70px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  #logo-title{
+    height: 39px;
+  }
+  .copy-ip{
+    font-size: 22px;
+  }
+
 }
 
 </style>
