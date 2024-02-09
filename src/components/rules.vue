@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <main>
     <div class="container">
@@ -75,7 +71,7 @@ main{
 
 .container{
   width: 85%;
-  padding: 20px 50px;
+  padding: 100px 50px 20px 50px;
   background: rgba(0,0,0,0.5);
 }
 
@@ -85,3 +81,11 @@ h2{
 }
 
 </style>
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo(0, 0) // прокрутить страницу вверх при загрузке
+})
+</script>

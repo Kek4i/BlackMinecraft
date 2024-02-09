@@ -133,6 +133,11 @@ main{
 </style>
 
 <script setup>
+  import { onMounted } from 'vue'
+
+  onMounted(() => {
+  window.scrollTo(0, 0) // прокрутить страницу вверх при загрузке
+})
 const copyIp = () => {
   const ipAddress = "BLACKMC.COM.PL";
   const textArea = document.createElement("textarea");

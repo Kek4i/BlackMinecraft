@@ -127,8 +127,7 @@ a{
 
 <script setup>
 import { ref } from "vue";
-import { onMounted } from "vue";
-import { onUnmounted } from "vue";
+import { onMounted, onUnmounted } from "vue";
 
 // Создаем реактивное свойство dropdownVisible, которое будет хранить состояние видимости выпадающего меню
 const dropdownVisible = ref(false);
