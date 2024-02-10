@@ -8,7 +8,6 @@
       </div>
       <button type="submit" class="submit">
         <div class="button-white-fill"></div>
-        <div class="button-fill"></div>
         <div class="submit-text">Отправить</div>
       </button>
     </form>
@@ -16,7 +15,6 @@
 </template>
 
 <style scoped>
-
 main {
   height: 100vh;
   background: url('../components/icons/logowanie.jpg');
@@ -50,6 +48,10 @@ main {
   transition: 0.3s;
 }
 
+.input-email:hover, .input-name:hover {
+  transform: scale(105%);
+}
+
 .submit {
   position: relative;
   width: 100%;
@@ -70,26 +72,28 @@ main {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #fff; /* Используйте белый цвет по умолчанию */
   left: 0;
   bottom: 0;
-}
-
-.button-fill {
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: #F3C623;
-  transition: 0.5s;
-  left: 0;
-  bottom: 0;
-  border-radius: 50%;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .submit-text {
   position: relative;
 }
 
+.submit:hover .button-white-fill {
+  background: #F3C623; /* Изменение цвета фона при наведении на кнопку */
+}
+
+input {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
 </style>
 
 <script setup>

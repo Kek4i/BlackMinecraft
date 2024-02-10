@@ -10,7 +10,6 @@
       </div>
       <button type="submit" class="submit">
         <div class="button-white-fill"></div>
-        <div class="button-fill"></div>
         <div class="submit-text">Вход</div>
       </button>
       <router-link to="/recovery">Забыли пароль?</router-link>
@@ -19,7 +18,6 @@
 </template>
 
 <style scoped>
-
 main {
   height: 100vh;
   background: url('../components/icons/logowanie.jpg');
@@ -53,7 +51,11 @@ main {
   transition: 0.3s;
 }
 
-.submit{
+.input-name:hover, .input-password:hover {
+  transform: scale(105%);
+}
+
+.submit {
   position: relative;
   width: 100%;
   background: transparent;
@@ -69,49 +71,45 @@ main {
   transition: 0.3s;
 }
 
-.button-white-fill{
+.button-white-fill {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #fff; /* Используйте белый цвет по умолчанию */
   left: 0;
   bottom: 0;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-.button-fill{
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: #F3C623;
-  transition: 0.5s;
-  left: 0;
-  bottom: 0;
-  border-radius: 50%;
-}
-
-.submit-text{
+.submit-text {
   position: relative;
 }
 
-a{
+.submit:hover .button-white-fill {
+  background: #F3C623; /* Изменение цвета фона при наведении на кнопку */
+}
+
+input {
+  color: white;
+}
+
+a {
   color: white;
   text-decoration: none;
 }
-
 </style>
 
 <script setup>
-import {ref} from 'vue'
+import { ref } from 'vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  window.scrollTo(0, 0) // прокрутить страницу вверх при загрузке
+  window.scrollTo(0, 0)
 })
 
-const passwordType = ref('password') // начальный тип поля пароля
+const passwordType = ref('password')
 
 const togglePasswordType = () => {
-  // функция для переключения типа поля пароля
   passwordType.value = passwordType.value === 'password' ? 'text' : 'password'
 }
 </script>
