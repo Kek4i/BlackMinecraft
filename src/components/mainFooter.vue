@@ -10,7 +10,7 @@
     </div>
 
     <div class="important-links">
-      <router-link to="/rules">Правила</router-link>
+      <router-link to="/rules">Правила покупок</router-link>
     </div>
 
     <div class="social-media">
