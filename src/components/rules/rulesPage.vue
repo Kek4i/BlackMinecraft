@@ -58,7 +58,7 @@
 
 main{
   min-height: calc(100vh - 70px);
-  background: url("../components/icons/background-shop.jpg");
+  background: url("../icons/background-shop.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

@@ -157,7 +157,7 @@
 <style scoped>
 main {
   min-height: calc(100% - 70px);
-  background: url("../components/icons/background-shop.jpg");
+  background: url("../icons/background-shop.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -224,43 +224,43 @@ main {
 }
 
 .card-img.gems-100 {
-  background: url("../components/icons/gems-100.jpg") center/cover no-repeat;
+  background: url("../iconsStore/gems-100.jpg") center/cover no-repeat;
 }
 
 .card-img.gems-200 {
-  background: url("../components/icons/gems-200.jpg") center/cover no-repeat;
+  background: url("../iconsStore/gems-200.jpg") center/cover no-repeat;
 }
 
 .card-img.gems-500 {
-  background: url("../components/icons/gems-500.jpg") center/cover no-repeat;
+  background: url("../iconsStore/gems-500.jpg") center/cover no-repeat;
 }
 
 .card-img.gems-1000 {
-  background: url("../components/icons/gems-1000.jpg") center/cover no-repeat;
+  background: url("../iconsStore/gems-1000.jpg") center/cover no-repeat;
 }
 
 .card-img.gems-2000 {
-  background: url("../components/icons/gems-2000.jpg") center/cover no-repeat;
+  background: url("../iconsStore/gems-2000.jpg") center/cover no-repeat;
 }
 
 .card-img.rank-epic {
-  background: url("../components/icons/rank-epic.jpg") center/cover no-repeat;
+  background: url("../iconsStore/rank-epic.jpg") center/cover no-repeat;
 }
 
 .card-img.rank-elite {
-  background: url("../components/icons/rank-elite.jpg") center/cover no-repeat;
+  background: url("../iconsStore/rank-elite.jpg") center/cover no-repeat;
 }
 
 .card-img.rank-mythic {
-  background: url("../components/icons/rank-mythic.jpg") center/cover no-repeat;
+  background: url("../iconsStore/rank-mythic.jpg") center/cover no-repeat;
 }
 
 .card-img.rank-legendary {
-  background: url("../components/icons/rank-legendary.jpg") center/cover no-repeat;
+  background: url("../iconsStore/rank-legendary.jpg") center/cover no-repeat;
 }
 
 .card-img.unban {
-  background: url("../components/icons/unban.jpg") center/cover no-repeat;
+  background: url("../iconsStore/unban.jpg") center/cover no-repeat;
 }
 
 .card-img {

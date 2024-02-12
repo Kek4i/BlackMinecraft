@@ -17,7 +17,7 @@
 <style scoped>
 main {
   height: 100vh;
-  background: url('../components/icons/logowanie.jpg');
+  background: url('../../icons/logowanie.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

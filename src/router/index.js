@@ -11,22 +11,22 @@ const router = createRouter({
     {
       path: '/store',
       name: 'store',
-      component: () => import('../components/store.vue')
+      component: () => import('../components/store/storePage.vue')
     },
     {
       path: '/rules',
       name: 'rules',
-      component: () => import('../components/rules.vue')
+      component: () => import('../components/rules/rulesPage.vue')
     },
     {
       path: '/auth',
       name: 'auth',
-      component: () => import('../components/auth.vue')
+      component: () => import('../components/authorization/authPage.vue')
     },
     {
       path: '/recovery',
       name: 'recovery',
-      component: () => import('../components/recovery.vue')
+      component: () => import('../components/authorization/recovery/recoveryPage.vue')
     }
   ]
 })

@@ -9,7 +9,7 @@
       </div>
       <div class="profile-box" @click="toggleDropdown"> <!-- Добавляем обработчик события click -->
         <img src="https://minotar.net/avatar/k3k.png" width="64" height="64" class="player"/>
-        <img src="../components/icons/dropdown-arrow.png" alt="dropdown arrow">
+        <img src="../icons/dropdown-arrow.png" alt="dropdown arrow">
         <div :class="{ 'dropdown-show': dropdownVisible, 'dropdown-hide': !dropdownVisible }">
           <router-link to="/auth">АВТОРИЗОВАТЬСЯ</router-link>
         </div>

@@ -3,7 +3,7 @@
 
   <div class="container">
     <div class="credits">
-      <img src="../components/icons/logo.png" alt="LOGO BLACKMC">
+      <img src="../icons/logo.png" alt="LOGO BLACKMC">
       <div class="authors">
         Made by Kek* <span>(backend)</span> and Kek* <span class="">(frontend)</span>
       </div>

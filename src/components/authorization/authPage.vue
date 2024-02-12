@@ -5,7 +5,7 @@
       <input type="text" placeholder="Ник" name="name" class="input-name">
       <div style="position: relative; display: inline-block;">
         <input :type="passwordType" placeholder="Пароль" name="password" class="input-password">
-        <img src="../components/icons/eye.png" alt="Показать пароль" width="25px" height="25px"
+        <img src="../icons/eye.png" alt="Показать пароль" width="25px" height="25px"
              style="position: absolute; right: 7px; top: 8px; cursor: pointer;" @click="togglePasswordType">
       </div>
       <button type="submit" class="submit">
@@ -20,7 +20,7 @@
 <style scoped>
 main {
   height: 100vh;
-  background: url('../components/icons/logowanie.jpg');
+  background: url('../icons/logowanie.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
